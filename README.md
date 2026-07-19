@@ -34,7 +34,7 @@ The project will use a simple web interface built with Flask, HTML, and CSS. The
 The restaurant data stored in the SQLite database will be loaded into Pandas DataFrames for analysis. The analysis will compare restaurant ratings, cuisine categories, price levels, and review counts. Pandas will be used to calculate values such as average ratings by cuisine, the number of restaurants in each price category, and the restaurants with the highest number of reviews. Matplotlib and Seaborn will be used to create visualizations that make the results easier to understand. The planned visualizations include a bar chart showing average ratings by cuisine, a bar chart showing the distribution of restaurant price levels, and a horizontal bar chart showing the top ten restaurants by review count. The analysis results and charts will be displayed on the statistics page of the Flask application.
 
 
-## Data Analysis and Visualization Plan  
+## Data Analysis and Visualization Plan
 ### Written by Author #2: Htoo Aung Kha
 
 Restaurant data will be collected from the Yelp Fusion API using Python and the Requests library. The user will enter a city and cuisine type, which will be used as search parameters in the API request. The program will retrieve information such as the restaurant name, Yelp business ID, rating, price level, review count, cuisine category, address, and Yelp URL. The collected data will be cleaned and converted into a consistent format before being stored. A local SQLite database will be used to save the restaurant search results so that the data can be accessed and analyzed later. The Yelp business ID will be used as a unique identifier to help prevent duplicate restaurant records. The Yelp API key will be stored in an environment variable and will not be uploaded to GitHub.
@@ -48,7 +48,7 @@ Restaurant data will be collected from the Yelp Fusion API using Python and the 
 - Summarize the analysis results
 - Help test the interface and visualizations
 
-### Partner 2: Htoo Aung Kha 
+### Partner 2: Htoo Aung Kha
 
 - Connect the application to the Yelp Fusion API
 - Retrieve restaurant data
@@ -83,6 +83,7 @@ Restaurant data will be collected from the Yelp Fusion API using Python and the 
 - Yelp Fusion API
 - SQLite
 - Pandas
+- Numpy
 - Matplotlib
 - Seaborn
 - Requests
@@ -112,3 +113,98 @@ restaurant-rating-analyzer/
 │
 └── data/
     └── restaurants.db
+
+```
+## Installation
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/kbhagra/Restaurant-Recommendation-Analyzer.git
+```
+
+2. Clone this repository.
+
+```bash
+cd Restaurant-Recommendation-Analyzer
+```
+
+3. Create a virtual environment (optional but recommended).
+
+```bash
+python3 -m venv venv
+```
+
+Activate the virtual environment:
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**macOS / Linux**
+
+```bash
+source venv/bin/activate
+```
+
+4. Install the required packages.
+
+```bash
+pip3 install -r requirements.txt
+```
+
+5. Create a `.env` file in the project folder and add your Yelp API key.
+
+```text
+YELP_API_KEY=your_api_key_here
+```
+
+---
+
+## How to Use
+
+1. Start the Flask application.
+
+```bash
+python3 app.py
+```
+
+2. Open your web browser and go to:
+
+```
+http://127.0.0.1:5000
+```
+
+3. Enter a city and choose a cuisine.
+
+4. Click **Search** to retrieve restaurant information from the Yelp Fusion API.
+
+5. View restaurant details including:
+   - Name
+   - Rating
+   - Price
+   - Review count
+   - Cuisine
+   - Address
+
+6. Save the search results to the SQLite database.
+
+7. Visit the **Statistics** page to view charts and summaries based on the stored restaurant data.
+
+---
+
+## Future Improvements
+
+- Add more search filters such as price range, rating, and "Open Now."
+- Display restaurant locations on an interactive map.
+- Allow users to save favorite restaurants.
+- Export restaurant data to a CSV file.
+- Add user accounts and search history.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
