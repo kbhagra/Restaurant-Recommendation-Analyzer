@@ -30,23 +30,17 @@ The Restaurant Rating and Recommendation Analyzer is a web-based Python applicat
 The project will use a simple web interface built with Flask, HTML, and CSS. The home page will include a search form where users can enter a city and cuisine type. After submitting the search, users will be taken to a results page that displays restaurant names, ratings, price levels, review counts, cuisine categories, and addresses. The application will also include a statistics page where users can view charts and summaries created from the stored restaurant data. Navigation links will allow users to move between the search page, results page, and statistics page.
 
 ## Data Collection and Storage Plan
-### Written by Khushi Bakshi
-The restaurant data stored in the SQLite database will be loaded into Pandas DataFrames for analysis. The analysis will compare restaurant ratings, cuisine categories, price levels, and review counts. Pandas will be used to calculate values such as average ratings by cuisine, the number of restaurants in each price category, and the restaurants with the highest number of reviews. Matplotlib and Seaborn will be used to create visualizations that make the results easier to understand. The planned visualizations include a bar chart showing average ratings by cuisine, a bar chart showing the distribution of restaurant price levels, and a horizontal bar chart showing the top ten restaurants by review count. The analysis results and charts will be displayed on the statistics page of the Flask application.
-
-
-## Data Analysis and Visualization Plan
 ### Written by Htoo Aung Kha
 
 Restaurant data will be collected from the Yelp Fusion API using Python and the Requests library. The user will enter a city and cuisine type, which will be used as search parameters in the API request. The program will retrieve information such as the restaurant name, Yelp business ID, rating, price level, review count, cuisine category, address, and Yelp URL. The collected data will be cleaned and converted into a consistent format before being stored. A local SQLite database will be used to save the restaurant search results so that the data can be accessed and analyzed later. The Yelp business ID will be used as a unique identifier to help prevent duplicate restaurant records. The Yelp API key will be stored in an environment variable and will not be uploaded to GitHub.
 
-## Team Responsibilities
 
-### Khushi Bakshi
-- Analyze the stored restaurant data using Pandas
-- Create visualizations using Matplotlib and Seaborn
-- Build the statistics page
-- Summarize the analysis results
-- Help test the interface and visualizations
+
+## Data Analysis and Visualization Plan
+### Written by Khushi Bakshi
+The restaurant data stored in the SQLite database will be loaded into Pandas DataFrames for analysis. The analysis will compare restaurant ratings, cuisine categories, price levels, and review counts. Pandas will be used to calculate values such as average ratings by cuisine, the number of restaurants in each price category, and the restaurants with the highest number of reviews. Matplotlib and Seaborn will be used to create visualizations that make the results easier to understand. The planned visualizations include a bar chart showing average ratings by cuisine, a bar chart showing the distribution of restaurant price levels, and a horizontal bar chart showing the top ten restaurants by review count. The analysis results and charts will be displayed on the statistics page of the Flask application.
+
+## Team Responsibilities
 
 ### Htoo Aung Kha
 
@@ -55,6 +49,13 @@ Restaurant data will be collected from the Yelp Fusion API using Python and the 
 - Store restaurant data in the SQLite database
 - Build the restaurant search page
 - Help test the API and database functionality
+
+### Khushi Bakshi
+- Analyze the stored restaurant data using Pandas
+- Create visualizations using Matplotlib and Seaborn
+- Build the statistics page
+- Summarize the analysis results
+- Help test the interface and visualizations
 
 
 ## Main Features
